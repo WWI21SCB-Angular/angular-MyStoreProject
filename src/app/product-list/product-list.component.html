@@ -14,10 +14,14 @@
   </h3>
   <button type="button" (click)="share()">share</button>
 
-  <app-product-alerts
-  [product]="product">
-</app-product-alerts>
+  <app-product-alerts [product]="product">
+  </app-product-alerts> 
+  <!--
+    [product]= Übergabe von Parameter
+    "product"= Parameter der übergeben wird
 
+    hier wird sozusagen die Datenstruktur "product" an den Component app-product-alerts übergeben
+  -->
 </div>
 
 <!-- 

@@ -8,4 +8,7 @@ import { Product } from '../products';
 })
 export class ProductAlertsComponent {
   @Input() product!: Product;
+  /*
+    @Input() = ermöglicht Übergabe von Datenstrukturen (in dem Fall Product) an andere Komponenten
+  */
 }
