@@ -8,15 +8,14 @@
        [routerLink]="['/products', product.id]">
       {{ product.name }}       
     </a>
+    <button type="button" (click)="share()">share</button>
+    <app-product-alerts [product]="product" (notify)="onNotify()"> </app-product-alerts> 
     <br>
     <li *ngIf="product.description">
       {{ 'desc: ' + product.description }}
     </li>    
   </h3>
-  <button type="button" (click)="share()">share</button>
-
-  <app-product-alerts [product]="product" (notify)="onNotify()">
-  </app-product-alerts> 
+  
   <!--
     [product]= Übergabe von Parameter
     "product"= Parameter der übergeben wird

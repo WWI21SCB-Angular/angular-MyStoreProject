@@ -1,0 +1,10 @@
+.btn-Warenkorb {
+  margin-left: 0px;
+  background-color: #1976d2;
+  color: #ffffff;
+}
+
+.btn-Warenkorb i.material-icons {
+  color: #ffffff;
+  padding-right: 4px;
+}
