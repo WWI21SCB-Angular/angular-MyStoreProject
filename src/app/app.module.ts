@@ -13,9 +13,16 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    /*
+      RouterModule bestimmt welche Komponenten auf der "Hauptseite" angezeigt werden.
+    */
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
-      { path: '', component: ProductDetailsComponent },
+      { path: 'products/:productId', component: ProductDetailsComponent },
+      /*
+        path: Pfad der beim anklicken des Links geöffnet wird
+        component: Komponente, die mit dem path verknüpft ist
+      */
     ])
   ],
   declarations: [
