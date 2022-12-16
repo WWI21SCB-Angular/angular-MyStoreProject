@@ -1,8 +1,16 @@
+<!--
+  <a [routerLink]="['/']"> benutzt den Router für die Weiterleitung des anchor zur Hauptseite /
+-->
 <a [routerLink]="['/']">
   <h1>My Store</h1>
 </a>
-
-<a class="button fancy-button"><i class="material-icons">shopping_cart</i>Checkout</a>
+<!--
+  <a class="button fancy-button"> benutzt als einen Button der Klasse fancy-button als anchor
+  [routerLink]="['/cart']" benutzt als Weiterleitung den Router zu dem Komponenten cart
+  <i class="material-icons"> benutzt das Icon shopping_cart mit den Klasseneigenschaften material-icons
+  Checkout ist der Name des Button
+-->
+<a class="button fancy-button" [routerLink]="['/cart']"><i class="material-icons">shopping_cart</i>Checkout</a>
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.

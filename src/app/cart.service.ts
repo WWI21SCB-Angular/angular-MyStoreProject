@@ -1,5 +1,7 @@
 import { Product } from './products';
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
 
 
 @Injectable({
@@ -9,7 +11,11 @@ export class CartService {
   /*
     Die Variable items ist vom Typ Product[] und beinhaltet ein leeres Array [];
   */
-  items: Product[] = [];
+  items: Product[] = []
+
+  constructor(
+    private http : HttpClient
+  ) { }
 
   /*
     addToCart-Funktion hat als Parameter/Argument die Variable product vom Datentyp Product
@@ -34,6 +40,15 @@ export class CartService {
   clearCart() {
     this.items = [];
     return this.items;
+  }
+
+  /*
+    getShippingPrices-Funktion nutzt den HttpClient http um die shipping.json-Datei
+    mittels des Befehls .get auszulesen. 
+    Zusätzlich werden mittels dem Diamond-Operator <> die zu erwartenden Datentypen festgelegt.
+  */
+  getShippingPrices() {
+    this.http.get<{type: string, price: number}[]>('/assets/shipping.json');
   }
 
 }
