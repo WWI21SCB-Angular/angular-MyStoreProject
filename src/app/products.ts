@@ -8,21 +8,21 @@ export interface Product {
 export const products = [
   {
     id: 1,
-    name: 'Phone XL',
-    price: 799,
-    description: 'A large phone with one of the best screens'
+    name: 'LG OLED TV 55"',
+    price: 1099,
+    description: 'LG OLED TVs sind die High-End-Produkte im TV-Portfolio'
   },
   {
     id: 2,
-    name: 'Phone Mini',
-    price: 699,
-    description: 'A great phone with one of the best cameras'
+    name: 'iPhone 13',
+    price: 799,
+    description: 'Brandneu, blitzschnell & extrem ausdauernd: das Apple iPhone 13'
   },
   {
     id: 3,
-    name: 'Phone Standard',
-    price: 299,
-    description: ''
+    name: 'Playstation 5',
+    price: 499,
+    description: 'Sonys neustes Schmuckstück, die Playstation 5'
   }
 ];
 

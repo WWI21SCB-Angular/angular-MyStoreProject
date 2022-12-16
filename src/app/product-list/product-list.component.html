@@ -1,4 +1,4 @@
-<h2>Products</h2>
+<h2>Produkte</h2>
 
 <div *ngFor="let product of products">
 
@@ -8,10 +8,6 @@
        [routerLink]="['/products', product.id]">
       {{ product.name }}       
     </a>
-    <br>
-    <li *ngIf="product.description">
-      {{ 'desc: ' + product.description }}
-    </li>    
   </h3>
   
   <!--
